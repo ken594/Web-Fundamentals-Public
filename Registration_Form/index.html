@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+
+    <div>
+      <label>First Name:* </label>
+      <input type="text" />
+    </div>
+
+    <div>
+      <label>Last Name:* </label>
+      <input type="text" />
+    </div>
+
+    <div>
+      <label>Email Address:* </label>
+      <input type="text" />
+    </div>
+
+    <div>
+      <label>Password:* </label>
+      <input type="password" />
+    </div>
+
+    <div>
+      <label>Confirm Password:* </label>
+      <input type="password" />
+    </div>
+
+    <div>
+      <label>Birthday: </label>
+      <input type="date" />
+    </div>
+
+    <label>Gender Identity:</label>
+    <div>
+      <input type="radio" name="font" id="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="font" id="female" />
+      <label for="female">Female</label>
+      <input type="radio" name="font" id="non_binary" />
+      <label for="non_binary">Non-binary</label>
+      <input type="radio" name="font" id="not_to_answer" />
+      <label for="not_to_answer">I prefer not to answer</label>
+    </div>
+
+    <label>A short description about myself:</label>
+    <div>
+      <textarea name="description" cols="30" rows="3"></textarea>
+    </div>
+
+    <div>
+      <label>Favorite Language: </label>
+      <select name="favorite_language">
+        <option value="JavaScript">JavaScript</option>
+        <option value="CSS">CSS</option>
+        <option value="Python">Python</option>
+      </select>
+    </div>
+
+    <div>
+      <input type="checkbox" id="receive_updates" />
+      <label for="receive_updates">
+        Yes, I would like to receive periodic email updates
+      </label>
+    </div>
+
+    <input type="submit" value="Create Account" />
+    <p>* Indicates a require field</p>
+  </body>
+</html>
