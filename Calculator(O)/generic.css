@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Balsomiq Sans", cursive;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.space-btw {
+  justify-content: space-between;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-deco-none {
+  text-decoration: none;
+}
+
+.list-style-none {
+  list-style-type: none;
+}
+
+.gap10 {
+  gap: 10px;
+}
+
+.gap20 {
+  gap: 20px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-1rem {
+  font-size: 1rem;
+}
+
+.font-1-3rem {
+  font-size: 1.3rem;
+}
+
+.font-1-5rem {
+  font-size: 1.5rem;
+}
+
+.font-2rem {
+  font-size: 2rem;
+}
+
+.padding-20 {
+  padding: 20px;
+}
+
+.padding-top-10 {
+  padding-top: 10px;
+}
+
+.fit-content {
+  height: fit-content;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
