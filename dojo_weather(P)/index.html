@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="flex space-btw align-center">
+      <h1 class="flex-1">DojoWeather</h1>
+      <ul class="flex flex-1">
+        <li><a onclick="goAlert()" href="#">Burbank</a></li>
+        <li><a onclick="goAlert()" href="#">Chicago</a></li>
+        <li><a onclick="goAlert()" href="#">Dallas</a></li>
+      </ul>
+    </nav>
+
+    <!-- main -->
+    <main class="flex flex-column gap20">
+      <!-- San Jose bar -->
+      <div class="flex space-btw align-center" id="bottom-border">
+        <h2>San Jose</h2>
+        <!-- use form tag wrap around select / input tag -->
+        <label class="flex" for="temperature">
+          show temperature in
+          <select name="C/F" id="temperature" onchange="convert(this)">
+            <option>&deg;C</option>
+            <option>&deg;F</option>
+          </select>
+        </label>
+      </div>
+
+      <!-- main body -->
+      <div id="main-body" class="flex gap20 space-btw">
+        <div class="column flex flex-column gap20">
+          <h3>Today</h3>
+          <img src="assets/some_rain.png" alt="some_rain" />
+          <p>some rain</p>
+          <div class="flex space-btw">
+            <span class="red bold"
+              ><span class="temp-conversion">24</span>&deg;</span
+            >
+            <span class="blue bold"
+              ><span class="temp-conversion">18</span>&deg;</span
+            >
+          </div>
+        </div>
+
+        <div class="column flex flex-column gap20">
+          <h3>Tomorrow</h3>
+          <img src="assets/some_sun.png" alt="some_sun" />
+          <p>some sun</p>
+          <div class="flex space-btw">
+            <span class="red bold"
+              ><span class="temp-conversion">27</span>&deg;</span
+            >
+            <span class="blue bold"
+              ><span class="temp-conversion">19</span>&deg;</span
+            >
+          </div>
+        </div>
+
+        <div class="column flex flex-column gap20">
+          <h3>Friday</h3>
+          <img src="assets/some_clouds.png" alt="some_clouds" />
+          <p>some clouds</p>
+          <div class="flex space-btw">
+            <span class="red bold"
+              ><span class="temp-conversion">21</span>&deg;</span
+            >
+            <span class="blue bold"
+              ><span class="temp-conversion">16</span>&deg;</span
+            >
+          </div>
+        </div>
+
+        <div class="column flex flex-column gap20">
+          <h3>Saturday</h3>
+          <img src="assets/some_sun.png" alt="some_sun" />
+          <p>some sun</p>
+          <div class="flex space-btw">
+            <span class="red bold"
+              ><span class="temp-conversion">26</span>&deg;</span
+            >
+            <span class="blue bold"
+              ><span class="temp-conversion">21</span>&deg;</span
+            >
+          </div>
+        </div>
+      </div>
+      <!-- cookie bar -->
+      <div id="cookie-bar" class="flex gap20 align-center">
+        <img src="assets/cookie.png" alt="cookie" />
+        <p class="flex-1">
+          <!-- use heading tag and p tag seperated this p -->
+          <span class="bold">Stop! Cookie time</span> <br />
+          We use cookies (sadly not the edible ones) to personalize content and
+          ads, to provide social media features and to analyse our traffic.
+          <a href="#">Read More...</a>
+        </p>
+        <button onclick="hide()">I Accept</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
