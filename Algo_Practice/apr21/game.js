@@ -20,10 +20,7 @@ function setTenRandomNinjas(theDojo) {
       coordinate.push(temp);
     }
   }
-
   console.log(coordinate);
-
-  var index = 0;
 
   for (let row = 0; row < theDojo.length; row++) {
     for (let col = 0; col < theDojo[row].length; col++) {
